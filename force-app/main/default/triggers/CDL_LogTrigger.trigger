@@ -11,7 +11,10 @@ trigger CDL_LogTrigger on CDL_Log_Event__e(after insert) {
                     CDL_Message__c = eventLog.CDL_Message__c,
                     CDL_Quiddity__c = eventLog.CDL_Quiddity__c,
                     CDL_Request_Id__c = eventLog.CDL_Request_Id__c,
-                    CDL_Severity__c = eventLog.CDL_Severity__c
+                    CDL_Severity__c = eventLog.CDL_Severity__c,
+                    CDL_Stack_Trace__c = eventLog.CDL_Stack_Trace__c,
+                    CDL_Line_Number__c = eventLog.CDL_Line_Number__c,
+                    CDL_Type__c = eventLog.CDL_Type__c
                 )
             );
         }

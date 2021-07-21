@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>All</fullName>
+    <fullName>CDL_Debug_Logs</fullName>
     <columns>NAME</columns>
     <columns>CDL_Type__c</columns>
     <columns>CDL_Line_Number__c</columns>
     <columns>CDL_Message__c</columns>
     <columns>CDL_Quiddity__c</columns>
-    <columns>CDL_Severity__c</columns>
     <filterScope>Everything</filterScope>
-    <label>All Logs</label>
+    <filters>
+        <field>CDL_Severity__c</field>
+        <operation>equals</operation>
+        <value>DEBUG</value>
+    </filters>
+    <label>Debug Logs</label>
 </ListView>

@@ -6,8 +6,6 @@
  *
  */
 public with sharing class CDL_LogMessage {
-    private static final String EXCEPTION_STRING_FORMAT = 'Exception: [{0}] {1} \n StackTrace: {2}';
-
     /**
      * @description public read only property for the request ID. Privately set.
      */
@@ -35,14 +33,13 @@ public with sharing class CDL_LogMessage {
     }
 
     /**
-     * @description Public message property.
+     * @description Other properties.
      */
     public String message { get; set; }
-
-    /**
-     * @description Public severity property.
-     */
+    public String stackTrace { get; set; }
     public CDL_LogSeverity severity { get; set; }
+    public Integer lineNumber { get; set; }
+    public String type { get; set; }
 
     /**
      * @description converts this object to an event for publishing
@@ -50,9 +47,12 @@ public with sharing class CDL_LogMessage {
      */
     public CDL_Log_Event__e toEvent() {
         return new CDL_Log_Event__e(
-            CDL_Message__c = this.message,
             CDL_Request_Id__c = this.requestId,
             CDL_Quiddity__c = this.quiddity?.name(),
+            CDL_Message__c = this.message,
+            CDL_Stack_Trace__c = this.stackTrace,
+            CDL_Line_Number__c = this.lineNumber,
+            CDL_Type__c = this.type,
             CDL_Severity__c = this.severity?.name()
         );
     }
@@ -72,14 +72,10 @@ public with sharing class CDL_LogMessage {
      * @param ex
      */
     public CDL_LogMessage(Exception ex) {
-        this.message = String.format(
-            EXCEPTION_STRING_FORMAT,
-            new List<String>{
-                ex.getTypeName(),
-                ex.getMessage(),
-                ex.getStackTraceString()
-            }
-        );
+        this.message = ex.getMessage();
+        this.stackTrace = ex.getStackTraceString();
+        this.lineNumber = ex.getLineNumber();
+        this.type = ex.getTypeName();
         this.severity = CDL_LogSeverity.ERROR;
     }
 }

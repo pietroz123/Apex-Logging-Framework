@@ -3,7 +3,8 @@ CDL_Log.get().publish(new DMLException('hi from exception land'));
 
 try {
     Account account = [SELECT Id FROM Account];
+}
+catch (Exception ex) {
     insert new Account(Name='doisss');
-} catch (Exception ex) {
     CDL_Log.get().publish(ex);
 }

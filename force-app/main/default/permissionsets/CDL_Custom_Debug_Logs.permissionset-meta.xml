@@ -2,6 +2,11 @@
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldPermissions>
         <editable>true</editable>
+        <field>CDL_Custom_Debug_Log__c.CDL_Line_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CDL_Custom_Debug_Log__c.CDL_Message__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -18,6 +23,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CDL_Custom_Debug_Log__c.CDL_Severity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CDL_Custom_Debug_Log__c.CDL_Stack_Trace__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CDL_Custom_Debug_Log__c.CDL_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
