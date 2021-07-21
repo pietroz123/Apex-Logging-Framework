@@ -42,22 +42,6 @@ public with sharing class CDL_LogMessage {
     public String type { get; set; }
 
     /**
-     * @description converts this object to an event for publishing
-     * @return      `SObject`
-     */
-    public CDL_Log_Event__e toEvent() {
-        return new CDL_Log_Event__e(
-            CDL_Request_Id__c = this.requestId,
-            CDL_Quiddity__c = this.quiddity?.name(),
-            CDL_Message__c = this.message,
-            CDL_Stack_Trace__c = this.stackTrace,
-            CDL_Line_Number__c = this.lineNumber,
-            CDL_Type__c = this.type,
-            CDL_Severity__c = this.severity?.name()
-        );
-    }
-
-    /**
      * @description   Constructor accepting a message to log.
      * Severity is auto set to info
      * @param message
@@ -77,5 +61,21 @@ public with sharing class CDL_LogMessage {
         this.lineNumber = ex.getLineNumber();
         this.type = ex.getTypeName();
         this.severity = CDL_LogSeverity.ERROR;
+    }
+
+    /**
+     * @description converts this object to an event for publishing
+     * @return      `SObject`
+     */
+    public CDL_Log_Event__e toEvent() {
+        return new CDL_Log_Event__e(
+            CDL_Request_Id__c = this.requestId,
+            CDL_Quiddity__c = this.quiddity?.name(),
+            CDL_Message__c = this.message,
+            CDL_Stack_Trace__c = this.stackTrace,
+            CDL_Line_Number__c = this.lineNumber,
+            CDL_Type__c = this.type,
+            CDL_Severity__c = this.severity?.name()
+        );
     }
 }

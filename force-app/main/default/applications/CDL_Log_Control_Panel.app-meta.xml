@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#D48A6D</headerColor>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Log Control Panel</label>
+    <navType>Console</navType>
+    <tabs>CDL_Custom_Debug_Log__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Log_Control_Panel_UtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>CDL_Custom_Debug_Log__c</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>
