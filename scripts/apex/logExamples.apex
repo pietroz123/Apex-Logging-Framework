@@ -5,6 +5,7 @@ try {
     Account account = [SELECT Id FROM Account];
 }
 catch (Exception ex) {
-    insert new Account(Name='doisss');
+    insert new Account(Name='alooo');
     CDL_Log.get().publish(ex);
+    throw ex;
 }
