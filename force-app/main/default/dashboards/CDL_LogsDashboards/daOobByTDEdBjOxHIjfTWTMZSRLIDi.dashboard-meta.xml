@@ -122,7 +122,6 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>test-gkgj8li2ex5g@example.com</runningUser>
     <textColor>#000000</textColor>
     <title>Logs Overview</title>
     <titleColor>#000000</titleColor>

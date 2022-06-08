@@ -1,36 +1,83 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
+        <members>CDL_Log</members>
+        <members>CDL_LogMessage</members>
+        <members>CDL_LogSeverity</members>
+        <members>CDL_LogTests</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>CDL_LogTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
+        <members>CDL_Log_Control_Panel</members>
+        <name>CustomApplication</name>
     </types>
     <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
+        <members>CDL_Custom_Debug_Log__c.CDL_Line_Number__c</members>
+        <members>CDL_Custom_Debug_Log__c.CDL_Message__c</members>
+        <members>CDL_Custom_Debug_Log__c.CDL_Quiddity__c</members>
+        <members>CDL_Custom_Debug_Log__c.CDL_Request_Id__c</members>
+        <members>CDL_Custom_Debug_Log__c.CDL_Severity__c</members>
+        <members>CDL_Custom_Debug_Log__c.CDL_Stack_Trace__c</members>
+        <members>CDL_Custom_Debug_Log__c.CDL_Type__c</members>
+        <members>CDL_Log_Event__e.CDL_Line_Number__c</members>
+        <members>CDL_Log_Event__e.CDL_Message__c</members>
+        <members>CDL_Log_Event__e.CDL_Quiddity__c</members>
+        <members>CDL_Log_Event__e.CDL_Request_Id__c</members>
+        <members>CDL_Log_Event__e.CDL_Severity__c</members>
+        <members>CDL_Log_Event__e.CDL_Stack_Trace__c</members>
+        <members>CDL_Log_Event__e.CDL_Type__c</members>
+        <name>CustomField</name>
     </types>
     <types>
-        <members>*</members>
-        <name>StaticResource</name>
+        <members>CDL_Custom_Debug_Log__c</members>
+        <members>CDL_Log_Event__e</members>
+        <name>CustomObject</name>
     </types>
-    <version>52.0</version>
+    <types>
+        <members>CDL_Custom_Debug_Log__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>CDL_LogsDashboards</members>
+        <members>CDL_LogsDashboards/daOobByTDEdBjOxHIjfTWTMZSRLIDi</members>
+        <name>Dashboard</name>
+    </types>
+    <types>
+        <members>CDL_Logs_Home</members>
+        <members>Log_Control_Panel_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>CDL_Log_Severity</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>CDL_Custom_Debug_Log__c-Custom Debug Log Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>CDL_Custom_Debug_Log__c.All</members>
+        <members>CDL_Custom_Debug_Log__c.CDL_Debug_Logs</members>
+        <members>CDL_Custom_Debug_Log__c.CDL_Error_Logs</members>
+        <members>CDL_Custom_Debug_Log__c.CDL_Info_Logs</members>
+        <members>CDL_Custom_Debug_Log__c.CDL_Warn_Logs</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>CDL_Custom_Debug_Logs</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>CDL_LogsReports</members>
+        <members>CDL_LogsReports/CDL_Logs_Overview</members>
+        <members>CDL_LogsReports/CDL_Logs_by_Quiddity</members>
+        <members>CDL_LogsReports/CDL_Logs_by_Severity</members>
+        <members>CDL_LogsReports/CDL_Logs_by_Type</members>
+        <name>Report</name>
+    </types>
+    <version>53.0</version>
 </Package>
