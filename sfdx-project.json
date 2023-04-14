@@ -2,10 +2,11 @@
     "packageDirectories": [
         {
             "path": "force-app",
-            "package": "CDL_Logs_Open",
-            "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT",
-            "default": true
+            "package": "CDL Logs",
+            "versionName": "1.0",
+            "versionNumber": "1.0.0.NEXT",
+            "default": true,
+            "versionDescription": "Logging made easy"
         }
     ],
     "name": "Custom Debug Logs",
@@ -13,7 +14,7 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "52.0",
     "packageAliases": {
-        "CDL_Logs_Open": "0Ho3t0000008ORnCAM",
-        "CDL_Logs_Open@0.1.0-2": "04t3t000002fC6AAAU"
+        "CDL Logs": "0HoDp000000CadVKAS",
+        "CDL Logs@1.0.0-1": "04tDp000000MFpYIAW"
     }
 }
